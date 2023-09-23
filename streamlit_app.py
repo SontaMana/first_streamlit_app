@@ -1,5 +1,7 @@
 import streamlit
 import pandas
+import snowflake.connector
+
 streamlit.title('LAVENDER ORACLE VIBES')
 
 streamlit.header('Breakfast Menu')
