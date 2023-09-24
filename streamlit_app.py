@@ -30,6 +30,7 @@ try:
         streamlit.text('Food Information')
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ fruit_choice)
         fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+      
 except URLError as e:
     streamlit.error()
 # write your own comment - what does this do?
