@@ -38,15 +38,15 @@ try:
         back_from_function=get_fruity_vice_data(fruit_choice)
         streamlit.dataframe(back_from_function)
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("SELECT * from fruit_load_list")
-my_data_rows = my_cur.fetchall()
-streamlit.header("The Fruit Load List Contains:")
-streamlit.dataframe(my_data_rows)
+#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+#my_cur = my_cnx.cursor()
+#my_cur.execute("SELECT * from fruit_load_list")
+#my_data_rows = my_cur.fetchall()
+#streamlit.header("The Fruit Load List Contains:")
+#streamlit.dataframe(my_data_rows)
 
-fruit_choice_list = streamlit.text_input('What fruit would you like to add?','Jackfruit')
+#fruit_choice_list = streamlit.text_input('What fruit would you like to add?','Jackfruit')
 
-streamlit.text("Thanks for Adding:"+ fruit_choice_list)
-my_cur.execute("INSERT INTO fruit_load_list values ('from streamlit')")
+#streamlit.text("Thanks for Adding:"+ fruit_choice_list)
+#my_cur.execute("INSERT INTO fruit_load_list values ('from streamlit')")
 
