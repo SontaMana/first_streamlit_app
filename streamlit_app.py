@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import snowflake.connector
-#import requests
+import requests
 
 streamlit.title('LAVENDER ORACLE VIBES')
 
