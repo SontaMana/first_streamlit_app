@@ -37,6 +37,8 @@ try:
    else:
         back_from_function=get_fruity_vice_data(fruit_choice)
         streamlit.dataframe(back_from_function)
+except:
+   streamlit.text("Something went wrong")
 
 #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cur = my_cnx.cursor()
