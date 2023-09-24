@@ -3,7 +3,7 @@ import pandas
 import snowflake.connector
 import requests
 
-streamlit.title('LAVENDER ORACLE VIBES')
+streamlit.title('INDIA MART')
 
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
