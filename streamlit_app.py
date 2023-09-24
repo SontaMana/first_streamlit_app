@@ -30,7 +30,7 @@ def get_fruity_vice_data(this_fruit_choice):
    return fruityvice_normalized
 try:
    fruit_choice = streamlit.text_input('What fruit would you like information about?')
-   if not fruiy_choice:
+   if not fruit_choice:
         streamlit.error("Please enter a Choice of fruit..")
    else:
         back_from_function=get_fruity_vice_data(fruit_choice)
